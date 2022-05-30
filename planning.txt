@@ -1,0 +1,15 @@
+PLAYER
+- superclass of players
+- start with 3 lives
+- minus 1 if answers wrong
+
+
+GAME
+- superclass of games
+- output new scores for both players
+- handle score, player's turn, questions
+
+
+QUESTION
+- consists of 2 numbers from  1 - 20
+- adding between those 2 numbers
