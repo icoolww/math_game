@@ -8,6 +8,9 @@ class Question
     @question = "What does #{num1} plus #{num2} equal?"
   end
 
+  def checking?(answer)
+    answer.to_i == @answer
+  end
 
 end
 
