@@ -14,5 +14,5 @@ class Question
 
 end
 
-question1 = Question.new
-puts question1.question
+# question1 = Question.new
+# puts question1.question

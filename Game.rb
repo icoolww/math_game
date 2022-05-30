@@ -2,7 +2,7 @@ require './Player'
 
 class Game
 
-  attr_reader :player, :turn :game_over
+  attr_reader :player, :turn, :game_over
 
   def initialize(players)
     @players = players
@@ -15,7 +15,7 @@ class Game
     if @turn == @players[0]
       @turn = @players[1]
     else
-      @turn = players[0]
+      @turn = @players[0]
     end
   end
 
@@ -27,7 +27,7 @@ class Game
   end
 
   def current_score
-    puts "#{players[0]} : #{players[0].lives}/3 VS #{players[1]} : #{players[1].lives}/3"
+    puts "#{@players[0].name} : #{@players[0].lives}/3 VS #{@players[1].name} : #{@players[1].lives}/3"
   end
 
 
